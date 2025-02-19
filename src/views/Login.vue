@@ -51,7 +51,7 @@ export default {
 };
 </script>
 <style> 
-/* Layout chính (Chia 2 khung) */
+/* 主佈局（分為 2 個框架） */
 .container {
   display: flex;
   width: 100%;
@@ -60,7 +60,7 @@ export default {
   overflow: hidden;
 }
 
-/* Bên trái (ESG Content) */
+/* 左邊（ESG 內容） */
 .left-section {
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ export default {
   height: 100%;
 }
 
-/* Image Container: This arranges images horizontally */
+/* 水平排列影像 */
 .image-container {
   display: flex !important;
   flex-direction: row !important;
@@ -84,16 +84,15 @@ export default {
   flex-wrap: nowrap;
   width: 100%; 
   overflow: hidden;
-  background-color: rgba(35, 206, 100, 0.1); /* Thêm màu nền để kiểm tra phạm vi container */
+  background-color: rgba(35, 206, 100, 0.1); /*新增背景顏色以檢查容器範圍 */
 }
-
 .image-section {
   width: 150px;
   height: 150px;
   border-radius: 70px;
   border: 2px solid #ddd;
   flex-shrink: 0;
-  background-color: rgba(0, 255, 0, 0.1); /* Debug: màu nền cho từng phần */
+  background-color: rgba(0, 255, 0, 0.1); /*調試：每個部分的背景顏色 */
 }
 
 .image-section img {
@@ -103,13 +102,13 @@ export default {
   border-radius: 50%;
 }
 
-/* Emphasizing the center image */
+/* 強調中心圖片 */
 .image-section:nth-child(2) {
   width: 200px;
   height: 200px;
   border: 3px solid / }
    
-/* Bên phải (Login Form) */
+/* 右側（登入表單） */
 .right-section {
   background: url(../assets/bg2.jpg) ;
   flex: 1;
@@ -127,7 +126,7 @@ export default {
   z-index: -1;
 }
 
-/* Logo công ty */
+/* 公司標誌 */
 .company-logo {
   position: absolute;
   top: 5%;
@@ -136,17 +135,7 @@ export default {
   width: 150px;
 }
 
-
-/* Logo công ty */
-.company-logo {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-}
-
-/* Form đăng nhập */
+/* 登入表單 */
 .login-container {
   position: relative;
   z-index: 2;
@@ -160,14 +149,14 @@ export default {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Nút login */
+/* 登入按鈕 */q
 .login-btn {
   background: #1976d2 !important;
   color: white;
   font-weight: bold;
 }
 
-/* Responsive (Mobile) */
+/* 響應式（移動) */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -198,14 +187,14 @@ export default {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 110px; /* điều chỉnh theo nhu cầu */
-  left: 480px;/* điều chỉnh theo nhu cầu */
+  top: 110px; /* 根據圖片大小調整的需求進行調整 */
+  left: 480px;/* 根據圖片大小調整的需求進行調整*/
   transform: translate(-50%, -50%);
 }
 h3 {  
   position: absolute;
-  top: 200px; /* điều chỉnh theo nhu cầu */
-  left: 480px;/* điều chỉnh theo nhu cầu */
+  top: 200px; /* 根據圖片大小調整的需求進行調整*/
+  left: 480px;/* 根據圖片大小調整的需求進行調整 */
   transform: translate(-50%, -50%);
   font-size: 24px;
   font-weight: bold;

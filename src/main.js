@@ -6,6 +6,7 @@ import { createVuetify } from 'vuetify'
 import '@mdi/font/css/materialdesignicons.css'; // MDI 圖標
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import router from './router'; // Import the router
 
 const vuetify = createVuetify({
   
@@ -19,4 +20,5 @@ const vuetify = createVuetify({
   
 const app = createApp(App)
 app.use(vuetify)
+app.use(router); // Use the router
 app.mount('#app')

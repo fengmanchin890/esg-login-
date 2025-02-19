@@ -1,14 +1,12 @@
 <template>
-  <div>
- <Login/>
-
-</div>
+<Login>
+</Login>
 
 </template>
+
 <script setup>
-import Login from './components/Login.vue'
+import Login from './views/Login.vue'
 
 
 
 </script>
-
