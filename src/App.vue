@@ -1,10 +1,14 @@
+
+
 <template>
-<Login>
-</Login>
+  
+    <RouterView>
+    </RouterView>
 
 </template>
 
-<script setup>
+<script setup lang="js">
+import { RouterView } from 'vue-router';
 import Login from './views/Login.vue'
 
 

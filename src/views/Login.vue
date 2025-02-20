@@ -27,7 +27,7 @@
       <div class="login-container">
         <img src="../assets/logo.png" class="company-logo" />
         <v-card class="login-card mx-auto pa-6 pb-6" elevation="8" max-width="448" rounded="lg">
-          <v-select label="SELECT" :items="['Tỷ Bách', 'Tỷ Xuân', 'Tỷ Thạch']"></v-select>
+          <v-select label="SELECT" :items="['億春', '億柏', '億碩']"></v-select>
           <v-text-field placeholder="00002" prepend-inner-icon="mdi-account-outline" variant="outlined"></v-text-field>
           <v-text-field
             :append-inner-icon="visible ? 'mdi-eye-off' : 'mdi-eye'"
@@ -37,7 +37,7 @@
             variant="outlined"
             @click:append-inner="visible = !visible"
           ></v-text-field>
-          <v-btn class="login-btn" color="blue" size="large" variant="tonal" block>lOGIN</v-btn>
+          <v-btn class="login-btn" color="blue" size="large" variant="tonal" block>登入</v-btn>
         </v-card>
       </div>
     </div>
